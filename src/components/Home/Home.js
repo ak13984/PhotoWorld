@@ -11,7 +11,7 @@ const url = `https://api.unsplash.com/photos/random?client_id=${API_SECRET}
 
 
 
-const Home=()=>{
+const Home=(props)=>{
 
 const [imageArr, setImages] = useState([]);
 
@@ -42,7 +42,7 @@ if(imageArr.length===0){
 
 <div style={{boxSizing:'border-box'}} >
 
-<Header/>
+<Header name={props.email} auth={props.auth} func={props.setIsSignedIn}/>
 <MainContent/>
 <InfiniteScroll
 pageStart={0} 

@@ -1,12 +1,25 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import { Button } from 'react-bootstrap';
 import {Link} from "react-router-dom"
 
 import SliderNav from "../SliderNav/SliderNav"
 
 
-export default function Header() {
-   
+export default function Header(props) {
+
+    
+const [name,setName]= useState("Hi stranger")
+
+
+useEffect(()=>{
+let val=props.auth.currentUser.displayName;
+    if(val!==null && val!==undefined){
+       setName(val.split(" ")[0]);
+    }
+},[])
+
+    
+
     return (
         <header>
             <nav className="nav-style">
@@ -28,13 +41,20 @@ export default function Header() {
         <div class="side-div">
             <span class="side-div-span">Home</span>
             <div className="right-side-div-text">Brands 
-                <span className="right-side-div-text-lifted">New</span></div>
+                <span className="right-side-div-text-lifted">New</span>
+            </div>
+           
               <Link to="/NotAvailable">
-              <Button variant="light" className="mr-class btnclass btnclass1"><span>Login</span></Button>
+              <Button variant="light" className="mr-class btnclass btnclass1"><span>{props.name|| `${name}`}</span></Button>
               </Link>
-              <Link to="/NotAvailable">
-              <Button variant="success" className="mr-class btnclass"><span>Register</span></Button>
-              </Link>
+              <Button variant="danger" className="mr-class btnclass"
+              onClick={()=>{
+props.auth.signOut();
+props.func((item)=>!item)
+              }}
+              ><span>
+Logout</span>
+              </Button>
         </div>
             </nav>
             <SliderNav/>
