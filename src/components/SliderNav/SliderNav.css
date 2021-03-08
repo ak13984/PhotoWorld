@@ -1,0 +1,41 @@
+/* .list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-btns{
+    border: none;
+    background: none;
+
+}
+.nav-tabs{
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #dee2e6;
+}
+
+.content{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+.nav-svg{
+    width: 24px;
+    height: 24px;
+    
+}
+
+@media only screen and (max-width: 650px){
+  .nav-item{
+      font-size: 10px;
+      font-weight: 500;
+  }
+}
+@media only screen and (min-width:650px) and (max-width:900px){
+    .nav-item{
+        font-size: 13px;
+        font-weight: 400;
+    }
+} */

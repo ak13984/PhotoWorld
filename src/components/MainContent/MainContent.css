@@ -1,0 +1,160 @@
+/* 
+.main{
+    padding: 60px;
+}
+
+.sub-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-heading{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.left-text{
+    max-width: 620px;
+}
+
+.right>*{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+}
+
+.right-top{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right-div{
+    border: 1px solid #eee;
+    padding:5px;
+    padding-right: 30px;
+}
+
+.right-top>*{
+    display: block;
+    margin-top: 2em;
+}
+.right-text-list{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.right-side-btn{
+    color: white;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right-side-btn:hover{
+    text-decoration: none;
+}
+
+.right-text-list-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainsvg{
+    margin-left: 0px;
+    height: 24px;
+    width: 40px;
+    vertical-align: middle;
+    border: 0.5px solid #eee;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media screen and (max-width:1300px){
+    .left-heading{
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .left-text{
+        font-size: 25px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .left-text
+{
+font-size: 22px;
+max-width: 400px;
+}
+}
+
+@media screen and (max-width:950px){
+    
+    .sub-main{
+        max-width: 50%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:818px){
+
+    .left-heading{
+        font-weight: 650;
+        font-size: 35px;
+    }
+    .left-text{
+ font-size: 20px;
+ max-width: 375px;
+    }
+    .right>*{
+width: 345px;
+    }
+    .right-div{
+        padding:3px;
+        padding-right: 25px;
+    }
+    .right-text-list{
+        padding-bottom: 8px;
+        margin-left: -10px;
+    }
+    .right-top>*{
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width:690px){
+    .right>*{
+        width: 320px;
+    }
+    .right-div{
+        padding: 2px;
+        padding-right: 20px;
+    }
+    .right-text-list{
+        padding-bottom: 6px;
+    }
+    .right-top>*{
+        margin-top: 1em;
+    }
+
+}
+
+@media screen and(max-width:658px){
+    .left-text{
+        font-size: 18px;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:592px){
+    .left-text{
+        font-size: 15px;
+    }
+} */
